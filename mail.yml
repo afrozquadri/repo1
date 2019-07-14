@@ -3,8 +3,8 @@ hosts: all
 var: 
 
 task:
-        -name: stop services 
-         win_services: 
-           name: BITS
-           state: stopped
+ -name: stop services 
+  win_services: 
+    name: BITS
+    state: stopped
 
