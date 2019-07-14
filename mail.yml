@@ -1,6 +1,9 @@
 ---
-- name: stop services 
-  win_service: 
-    name: BITS
-    state: stopped
+# tasks file for common
+
+- name: Install TelnetClient
+  win_feature:
+    name: 
+    - Telnet-Client
+    state: present
 
