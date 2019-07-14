@@ -2,7 +2,7 @@
 -
  
   # Target: where our play will run and options it will run with
-  hosts: 192.168.1.150
+  hosts: WINSER1
   # Task: the list of tasks that will be executed within the playbook
   tasks:
    - name: Install only particular updates based on the KB numbers
