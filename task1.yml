@@ -1,6 +1,5 @@
 ---
   hosts: 192.168.1.190
-  vars: 
   tasks:
     - name: stop a bits service 
       win_service: 
