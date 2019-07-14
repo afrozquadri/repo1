@@ -1,9 +1,16 @@
 ---
-# tasks file for common
-
-- name: Install TelnetClient
-  win_feature:
-    name: 
-    - Telnet-Client
-    state: present
+-
+ 
+  # Target: where our play will run and options it will run with
+  hosts: 192.168.1.150
+  # Task: the list of tasks that will be executed within the playbook
+  tasks:
+   - name: Install only particular updates based on the KB numbers
+     win_updates:
+       category_name:
+       - SecurityUpdates
+       whitelist:
+       - KB4507457 
+       - KB4507448
+...
 
