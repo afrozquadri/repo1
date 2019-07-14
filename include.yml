@@ -4,9 +4,9 @@
   gather_facts: true # this will make not to gather facts before running tasks
 
   tasks: 
-    - name: play1 - task1
+    - name: task1
       debug:
-           msg: play1-task1
+           msg: task1
 
     - include_tasks: task1.yml
     
