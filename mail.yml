@@ -1,5 +1,4 @@
 ---
-
 tasks:
   - name: stop services 
     win_service: 
