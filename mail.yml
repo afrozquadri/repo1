@@ -1,7 +1,7 @@
 ---
-tasks:
-  - name: stop services 
-    win_service: 
-      name: BITS
-      state: stopped
+ tasks:
+   - name: stop services 
+     win_service: 
+       name: BITS
+       state: stopped
 
