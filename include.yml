@@ -1,0 +1,17 @@
+---
+-
+  hosts: 192.168.1.190
+  gather_facts: true # this will make not to gather facts before running tasks
+
+  tasks: 
+    - name: play1 - task1
+      debug:
+           msg: play1-task1
+
+    - include_tasks: task1.yml
+    
+
+- import_playbook: task2.yml
+
+
+...
