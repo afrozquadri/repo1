@@ -4,7 +4,7 @@ var:
 
 task:
  -name: stop services 
-  win_services: 
+  win_service: 
     name: BITS
     state: stopped
 
